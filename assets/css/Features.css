@@ -1,0 +1,166 @@
+*{margin:0; padding:0;}
+
+.events {
+    float: left;
+    margin: 20px;
+}
+
+.offers {
+    float: left;
+    margin: 20px;
+}
+
+.home {
+    float: left;
+    margin: 20px;
+}
+
+.best {
+    float: left;
+    margin: 20px;
+}
+
+.drink {
+    float: left;
+    margin: 20px;
+}
+
+.food {
+    float: left;
+    margin: 20px;
+}
+.Menuchinh a.hover:hover {
+    color: white;
+}
+h2.bigtitle{
+    font-size: 45px;
+    color: #fbf7ef;
+    padding: 21px 0 0;
+}
+.Menuchinh{
+    transition: 0.4s;
+}
+.DetailMenu{
+    width: 100%;
+    height: 78px;
+    padding-left: 10%;
+    font-size: 19px;
+    background-image: url(../images/bg_feat.JPG);
+    border-bottom: 1px solid white;
+}
+.col-sm-5.thongtinmotkhoi {
+    border-radius: 0 0 1px 20px;
+    float: left;
+    height: 550px;
+    margin: 5px 0px 5px;
+}
+.row{
+    width: 100%;
+    height: 1500px;
+    margin: 0px 20px 10px 80px;
+}
+img.anhnuoc {
+    height: 258px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
+p.detaildrink {
+    padding: 0 5px 5px 10px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #fbf7ef;
+}
+
+h4.titledrink {
+    padding: 10px 0;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #fbf7ef;
+}
+
+img.hinhanh {padding-top: 20%;}
+
+.col-sm-4.anhfood {
+    height: 250px;
+    width: 300px;
+}
+
+.col-sm-4.anhfood {
+    overflow: hidden;
+}
+
+h4.titlefood {
+    font-size: 25px;
+    text-align: left;
+    font-weight: 700;
+}
+
+h4.titlefood.canhphai {
+    text-align: right;
+}
+
+.col-sm-8.textfood {
+    padding-top: 50px;
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.banner img.layer1{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+}
+.banner p.tieudefeat{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0px;
+    z-index:2;
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+}
+.infofood{
+    background-image: url(../images/bg_feat.JPG);
+}
+.motkhoiinfo{
+    color: #fff;
+    height: 250px;
+    margin: 25px 0;
+    overflow: hidden;
+}
+.w3-agileitsline.daugach {
+    width: 200px;
+}
+
+p.detailfood {
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+.motkhoiinfo .daugach{
+    margin:0;
+    padding:0;
+}
+
+.w3-agileitsline.daugach.canhphai {
+    float: right;
+}
+.daucach{
+    border-bottom: 1px solid gray;
+}
+.infodrink{
+    background-image: url(../images/bg_feat.JPG);
+}
+.background{
+    background-color: #ffffff96;
+    border-radius: 15px 15px 15px 15px;
+    height: 550px;
+}
