@@ -10,6 +10,7 @@
  	<link rel="stylesheet" href="<?= base_url() ?>/1.css">
 </head>
 <body>
+<!--  -->
         <nav class="navbar navbar-light bg-faded">
           <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
             &#9776;
@@ -27,6 +28,7 @@
             </ul>
           </div>
         </nav>
+	<!--  -->
 <div class="container">
 	<div class="row">
 		<div class="col-sm-6 push-sm-3">
@@ -45,7 +47,7 @@
 					 <input name="slide_image_old[]" type="hidden" class="form-control" id="button_text" value="<?= $value['slide_image'] ?>" />
 					<input name="slide_image[]" type="file"  />
 				</fieldset>
-		<?php endforeach ?>
+			<?php endforeach ?>
 				<fieldset class="form-group">
 			 		<input type="submit" class="form-control" value="Lưu">
 				</fieldset>

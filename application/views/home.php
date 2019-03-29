@@ -125,15 +125,23 @@
 	<div id="menu" class="menu">
 		<h1 class="titleMenu">- MENU -</h1>
 		<div class="w3-agileitsline"></div>
-			<div class="menupizza">
-				<h3 class="textmenu"><a href="MenuPizza" class="hovertext">pizza</a></h3>
+		<div class="container-fluid khoimenu">
+			<div class="col-xs-4 text-xs-center">
+				<div class="menupizza">
+					<h3 class="textmenu"><a href="MenuPizza" class="hovertext">pizza</a></h3>
+				</div>
 			</div>
-			<div class="menupizza">
-				<h3 class="textmenu"><a href="MenuFood" class="hovertext">food</a></h3>
+			<div class="col-xs-4 text-xs-center">
+				<div class="menupizza">
+					<h3 class="textmenu"><a href="MenuFood" class="hovertext">food</a></h3>
+				</div>
 			</div>
-			<div class="menupizza">
-				<h3 class="textmenu"><a href="MenuDessert" class="hovertext">dessert</a></h3>
+			<div class="col-xs-4 text-xs-center">
+				<div class="menupizza">
+					<h3 class="textmenu"><a href="MenuDessert" class="hovertext">dessert</a></h3>
+				</div>
 			</div>
+		</div> <!--  Het container -->
 	</div> 
 	<!-- Hết Menu -->
 	<!-- Features -->

@@ -12,19 +12,16 @@ h1.titleMenu {
 
 #menu{
 	background-image: url(../images/bg_menu_pz.jpg);
-	height: 300px;
+	height: 350px;
 }
 .menupizza{
-	margin-left: 265px;
+	margin-left: 35%;
 	text-align: center;
 	margin-top: 45px;
 	float: left;
-	font-size: 50px;
+
 }
 
-.menupizza:hover {
-	
-}
 .menu .menupizza h3.textmenu{
 	text-transform: uppercase;
 }
