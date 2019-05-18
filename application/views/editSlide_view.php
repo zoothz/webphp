@@ -29,7 +29,6 @@
           </div>
         </nav>
 	<!--  -->
-<div class="container">
 	<div class="row">
 		<div class="col-sm-6 push-sm-3">
 		<h3 class=" text-xs-center"> Sửa slide</h3>

@@ -132,7 +132,7 @@ h4.titlefood.canhphai {
 }
 .motkhoiinfo{
     color: #fff;
-    height: 250px;
+    height: auto;
     margin: 25px 0;
     overflow: hidden;
 }

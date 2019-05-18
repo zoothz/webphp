@@ -34,14 +34,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">Veg Mores</a>
+					<a class="navbar-brand" href="index.php">Home</a>
 				</div> 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="hover-effect active"><a href="index.php">Home</a></li>
 						<li class="hover-effect"><a href="#about" class="scroll">About</a></li>
 						<li class="hover-effect"><a href="#menupizza" class="scroll">Menu</a></li>
-						<li class="hover-effect"><a href="#features" class="scroll">Features</a></li>
+						<li class="hover-effect"><a href="Features" class="scroll">Features</a></li>
 						<li class="hover-effect"><a href="#specials" class="scroll">Specials</a></li>
 						<li class="hover-effect"><a href="#team" class="scroll">Team</a></li> 
 						<li class="hover-effect"><a href="#reservations" class="scroll">Reservations</a></li>
@@ -76,10 +76,9 @@
 	<div id="infoDessert" class="infoPizza">
 		<div class="container">
 			<h2 class="bigtitle">Dessert</h2>
-			<div class="w3-agileitsline daugach"></div>
-
-
-				<div class="noidungkhoi Dessert">		
+			<div class="w3-agileitsline daugach">
+			</div>
+				<div class="noidungkhoi Dessert">
 					<div class="col-sm-4 chitietnd">
 						<img src="<?php base_url() ?>assets/images/Dessert1.png" class="anhpizza" alt="Matcha Brulee">
 						<p class="textpizza">Matcha Brulee</p>
@@ -139,21 +138,21 @@
 					<h4>QUICK LINKS</h4>
 					<ul>
 						<li><a href="#about">About</a></li>
-						<li><a href="#features">Features</a></li>
+						<li><a href="features">Features</a></li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#team">Team</a></li>
 						<li><a href="index.php">Home</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 col-sm-4 footer-info-grid address">
-					<h4>ADDRESS</h4>
+					<<h4>ADDRESS</h4>
 					<address>
 						<ul>
-							<li>Parma Via Modena</li>
-							<li>40019 Sant'Agata Bolognese</li>
-							<li>BO, Italy</li>
-							<li>Telephone : +1 (734) 123-4567</li>
-							<li>Email : <a class="mail" href="mailto:mail@example.com">ieoal270@gmail.com</a></li>
+							<li>Pizza HOKO</li>
+							<li>102 Lạc Long Quân, P.5, Q.11</li>
+							<li>Hồ Chí Minh</li>
+							<li>Telephone : +84 (888) 888-8888</li>
+							<li>Email : <a class="mail" href="mailto:mail@example.com">doandinh1998@gmail.com</a></li>
 						</ul>
 					</address>
 				</div>

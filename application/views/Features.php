@@ -1,24 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head> 
-<title>MenuPizza</title> 
+<title>Features</title> 
 <!-- For-Mobile-Apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //For-Mobile-Apps --> 
 <!-- Custom-Stylesheet-Links -->
-<link rel="stylesheet" href="<?php base_url()?>assets/css/bootstrap.min.css" type="text/css" media="all"/> <!-- Bootstrap-Core-CSS --> 
-<link rel="stylesheet" href="<?php base_url()?>assets/css/style.css" type="text/css" media="all" /> <!-- Index-Page-Styling --> 
-<link rel="stylesheet" href="<?php base_url()?>assets/css/owl.carousel.css" type="text/css" media="all"/> <!-- Owl-Carousel-CSS -->  
-<link rel="stylesheet" href="<?php base_url()?>assets/css/popuo-box.css" type="text/css" media="all"/> <!-- Popup-Box-CSS -->
-<link href="css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+<!-- Custom-Stylesheet-Links -->
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css" type="text/css" media="all"/> <!-- Bootstrap-Core-CSS --> 
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css" type="text/css" media="all" /> <!-- Index-Page-Styling --> 
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.css" type="text/css" media="all"/> <!-- Owl-Carousel-CSS -->  
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/popuo-box.css" type="text/css" media="all"/> <!-- Popup-Box-CSS -->
+<link href="<?= base_url() ?>assets/css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
 <!-- //Custom-Stylesheet-Links --> 
 <!-- Web-Fonts -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="<?php base_url()?>assets/css/Menu.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/Menu.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/features.css"/>
 <!-- //Web-Fonts --> 
 </head>
 <body> 
@@ -40,7 +42,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li class="hover-effect active"><a href="index.php">Home</a></li>
 						<li class="hover-effect"><a href="#about" class="scroll">About</a></li>
-						<li class="hover-effect"><a href="#menupizza" class="scroll">Menu</a></li>
+						<li class="hover-effect"><a href="MenuPizza" class="scroll">Menu</a></li>
 						<li class="hover-effect"><a href="features" class="scroll">Features</a></li>
 						<li class="hover-effect"><a href="#specials" class="scroll">Specials</a></li>
 						<li class="hover-effect"><a href="#team" class="scroll">Team</a></li>
@@ -52,87 +54,46 @@
 		<!-- //Navbar --> 
 		<!-- Slider -->
 		<div class="banner">
-					<img src="images/bg_menu_pz.jpg" class="layer1" alt="Veg Mores">
-					<p class="tieudefeat">Menu</p>
+					<img src="<?= Base_url() ?>assets/images/1.jpg" class="layer1" alt="Veg Mores">
+					<p class="tieudefeat">Features</p>
 		</div>
 		<!-- //Slider --> 
 	</div>
-	<!-- //Header -->
-	<div id="menupizza" class="Menuchinhpizza">
-			<div class="DetailMenupizza">
-				<div class="pizza">
-					<a href="#infoPizza" class="hover">Pizza /</a>
-				</div>
+	<!-- //Header --> 
+	<!-- Menu chọn mục -->
+	<div id="features" class="Menuchinh">
+			<div class="DetailMenu">
+				<?php foreach ($cacdanhmuc as $value): ?>
 				<div class="food">
-					<a href="MenuFood" class="hover">Food /</a>
+					<a href="<?=base_url();?>features/tin/<?= $value['id'] ?>"><?= $value['tendanhmuc'] ?> </a>
 				</div>
-				<div class="dessert">
-					<a href="MenuDessert" class="hover">Dessert</a>
-				</div>
+				<?php endforeach ;?>
 			</div>
 	</div>
-
-	<!-- Menu Pizza -->
-	<div id="infoPizza" class="infoPizza">
+	<!-- Hết Menu chọn mục -->
+	<!-- Thông tin Delicious food -->
+	
+	<div id="infofood" class="infofood">
 		<div class="container">
-			<h2 class="bigtitle">Pizza</h2>
+			<h2 class="bigtitle">News</h2>
 			<div class="w3-agileitsline daugach"></div>
-			
-				<!--   start-->
-				<div class="noidungkhoi">		
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p1.png" class="anhpizza" alt="">
-						<p class="textpizza">Burrata Parma Ham</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p2.png" class="anhpizza" alt="">
-						<p class="textpizza">Burrata Parma Ham Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p3.png" class="anhpizza" alt="">
-						<p class="textpizza">Burrata Anchovy Tomato</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">		
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p4.png" class="anhpizza" alt="">
-						<p class="textpizza">Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p5.png" class="anhpizza" alt="">
-						<p class="textpizza">Parma Ham Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p6.png" class="anhpizza" alt="">
-						<p class="textpizza">Milano Salami & Chorizo Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-			
-				<div class="noidungkhoi">		
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p7.png" class="anhpizza" alt="">
-						<p class="textpizza">House-made Cheese</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-			
+			<?php foreach($dulieutin as $motdl): ?>
+			<div class="motkhoiinfo">
+					<div class="col-sm-8 textfood">
+						<h4 class="titlefood" ><?= $motdl['tieude'] ?></h4>
+						<p class="detailfood" ><?= $motdl['noidung'] ?></p>
+					</div> <!-- Hết col-sm-8.textfood -->
+					<div class="col-sm-4 anhfood">
+						<img src="<?= $motdl['anhtin'] ?>" alt="<?= $motdl['tieude'] ?>" class="hinhanh">
+					</div> <!-- Hết col-sm-4.anhfood -->
+
+			</div>
+			<?php endforeach; ?>
+			 <!-- Hết motkhoiinfo -->
 		</div> <!-- Hết container -->
-	</div> <!-- Hết infoPizza -->
-	<!-- Hết Menu Pizza -->
+	<!-- </div> Hết infofood -->
+	<!-- Hết thông tin về thức uống -->
+	-->
 	<!-- Footer -->
 	<div class="footer">
 		<div class="container"> 
@@ -144,7 +105,7 @@
 						<li><a href="features">Features</a></li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#team">Team</a></li>
-						<li><a href="home">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 col-sm-4 footer-info-grid address">
@@ -187,14 +148,14 @@
 				</div>
 			</div> 
 			<div class="copyright">
-				<p>&copy; ahihi đồ ngốc !!</p>
+				<p>&copy; 2017 Veg Mores. All Rights Reserved</p>
 			</div> 
 		</div>
 	</div>
 	<!-- //Footer --> 
-	<script type="text/javascript" src="<?php base_url()?>assets/js/jquery.min.js"></script> <!-- Supportive-JavaScript --> 
+	<script type="text/javascript" src="<?= base_url() ?>js/jquery.min.js"></script> <!-- Supportive-JavaScript --> 
 	<!-- Banner-Slider-JavaScript -->
-	<script src="<?php base_url()?>assets/js/responsiveslides.min.js"></script>
+	<script src="<?= base_url() ?>js/responsiveslides.min.js"></script>
 	<script>
 		$(function () {
 			$("#slider").responsiveSlides({
@@ -208,7 +169,7 @@
 	</script>
 	<!-- //Banner-Slider-JavaScript --> 
 	<!-- Owl-Carousel-JavaScript -->
-	<script src="<?php base_url()?>assets/js/owl.carousel.js"></script>
+	<script src="<?= base_url() ?>js/owl.carousel.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#owl-demo").owlCarousel ({
@@ -222,7 +183,7 @@
 	<!-- //Owl-Carousel-JavaScript -->
 
 	<!-- Magnific-Popup-Display-JavaScript -->
-	<script src="<?php base_url()?>assets/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script src="<?= base_url() ?>js/jquery.magnific-popup.js" type="text/javascript"></script>
 	<script>
 	$(document).ready(function() {
 		$('.popup-with-zoom-anim').magnificPopup({
@@ -241,17 +202,17 @@
 	<!-- //Magnific-Popup-Display-JavaScript -->
 
 	<!-- Progressive-Effects-Animation-JavaScript -->
-	<script type="text/javascript" src="<?php base_url()?>assets/js/jquery.inview.min.js"></script>
-	<script type="text/javascript" src="<?php base_url()?>assets/js/wow.min.js"></script>
-	<script type="text/javascript" src="<?php base_url()?>assets/js/mousescroll.js"></script>
-	<script type="text/javascript" src="<?php base_url()?>assets/js/main.js"></script>
-	<script type="text/javascript" src="<?php base_url()?>assets/js/numscroller-1.0.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>js/wow.min.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>js/mousescroll.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>js/main.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>js/numscroller-1.0.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 	<!-- //Progressive-Effects-Animation-JavaScript -->  
 	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="<?php base_url()?>assets/js/move-top.js"></script>
-	<script type="text/javascript" src="<?php base_url()?>assets/js/easing.js"></script>	
+	<script type="text/javascript" src="<?= base_url() ?>js/move-top.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>js/easing.js"></script>	
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -279,6 +240,6 @@
 		});
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->  
-	<script type="text/javascript" src="<?php base_url()?>assets/js/bootstrap.min.js"></script> <!-- Necessary-JS-File-For-Bootstrap --> 
+	<script type="text/javascript" src="<?= base_url() ?>js/bootstrap.min.js"></script> <!-- Necessary-JS-File-For-Bootstrap --> 
 </body>
 </html>

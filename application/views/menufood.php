@@ -34,20 +34,21 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">Veg Mores</a>
+					<a class="navbar-brand" href="index.php">Home</a>
 				</div> 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="hover-effect active"><a href="index.php">Home</a></li>
 						<li class="hover-effect"><a href="#about" class="scroll">About</a></li>
 						<li class="hover-effect"><a href="#menupizza" class="scroll">Menu</a></li>
-						<li class="hover-effect"><a href="Features.html" class="scroll">Features</a></li>
+						<li class="hover-effect"><a href="features" class="scroll">Features</a></li>
 						<li class="hover-effect"><a href="#specials" class="scroll">Specials</a></li>
 						<li class="hover-effect"><a href="#team" class="scroll">Team</a></li>
 						<li class="hover-effect"><a href="#reservations" class="scroll">Reservations</a></li>
 					</ul>
 				</div> 
 			</div>
+			
 		</nav>
 		<!-- //Navbar --> 
 		<!-- Slider -->
@@ -77,19 +78,6 @@
 		<div class="container">
 			<h2 class="bigtitle">Food</h2>
 			<div class="w3-agileitsline daugach"></div>
-			<div class="DetailMenupizzasmall food">
-				<div class="pizza">
-					<a href="#Appetizer" class="hover">Appetizer /</a>
-				</div>
-				<div class="food">
-					<a href="#Salad" class="hover">Salad /</a>
-				</div>
-				<div class="dessert">
-					<a href="#Soup" class="hover">Soup</a>
-				</div>
-			</div>
-
-			<div id="Appetizer" class="col-sm-12 tieudepizza">Appetizer</div>
 				<div class="noidungkhoi food">		
 					<div class="col-sm-4 chitietnd">
 						<img src="<?php base_url() ?>assets/images/food1.jpg" class="anhpizza" alt="">
@@ -125,9 +113,6 @@
 						<p class="giapizza">290000 VND</p>
 					</div>
 				</div> <!-- Hết noidungkhoi -->
-				
-
-			<div id="Salad" class="col-sm-12 tieudepizza">Salad</div>
 				<div class="noidungkhoi food">		
 					<div class="col-sm-4 chitietnd">
 						<img src="<?php base_url() ?>assets/images/salad1.jpg" class="anhpizza" alt="">
@@ -157,7 +142,6 @@
 					</div>
 				</div> <!-- Hết noidungkhoi -->
 
-			<div id="Soup" class="col-sm-12 tieudepizza">Soup</div>
 				<div class="noidungkhoi food">		
 					<div class="col-sm-4 chitietnd">
 						<img src="<?php base_url() ?>assets/images/s1.jpg" class="anhpizza" alt="">
@@ -184,20 +168,20 @@
 					<h4>QUICK LINKS</h4>
 					<ul>
 						<li><a href="#about">About</a></li>
-						<li><a href="#features">Features</a></li>
+						<li><a href="features">Features</a></li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#team">Team</a></li>
 						<li><a href="index.php">Home</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 col-sm-4 footer-info-grid address">
-					<h4>ADDRESS</h4>
+				<h4>ADDRESS</h4>
 					<address>
 						<ul>
-							<li>Pizza HOKO?</li>
-							<li>102 Lạc Long Quân P.5 Q.11</li>
+							<li>Pizza HOKO</li>
+							<li>102 Lạc Long Quân, P.5, Q.11</li>
 							<li>Hồ Chí Minh</li>
-							<li>Telephone : +86 (88) 888-8888</li>
+							<li>Telephone : +84 (888) 888-8888</li>
 							<li>Email : <a class="mail" href="mailto:mail@example.com">doandinh1998@gmail.com</a></li>
 						</ul>
 					</address>

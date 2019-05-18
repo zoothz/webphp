@@ -35,7 +35,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">Veg Mores</a>
+					<a class="navbar-brand" href="index.php">Home</a>
 				</div> 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -156,7 +156,7 @@
 							<i class="fa fa-cutlery" aria-hidden="true"></i>
 						</div>
 						<div class="features-info">
-							<a href="Features.html"><h4>Delicious food</h4></a>
+							<a href="Features"><h4>Delicious food</h4></a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
@@ -167,7 +167,7 @@
 							<i class="fa fa-glass" aria-hidden="true"></i>
 						</div>
 						<div class="features-info">
-							<a href="Features.html"><h4>Variety Drinks</h4></a>
+							<a href="Features"><h4>Variety Drinks</h4></a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
@@ -178,7 +178,7 @@
 							<i class="fa fa-diamond" aria-hidden="true"></i>
 						</div>
 						<div class="features-info">
-							<a href="Features.html"><h4>Best Certification</h4></a>
+							<a href="Features"><h4>Best Certification</h4></a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
@@ -189,7 +189,7 @@
 							<i class="fa fa-truck" aria-hidden="true"></i>
 						</div> 
 						<div class="features-info">
-							<a href="Features.html"><h4>Home Delivery</h4></a>
+							<a href="Features"><h4>Home Delivery</h4></a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
@@ -200,7 +200,7 @@
 							<i class="fa fa-gift" aria-hidden="true"></i>
 						</div>
 						<div class="features-info">
-							<a href="Features.html"><h4>Festival Offers</h4></a>
+							<a href="Features"><h4>Festival Offers</h4></a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
@@ -211,7 +211,7 @@
 							<i class="fa fa-birthday-cake" aria-hidden="true"></i>
 						</div>
 						<div class="features-info">
-							<a href="Features.html"><h4>Private Events</h4></a>
+							<a href="Features"><h4>Private Events</h4></a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
