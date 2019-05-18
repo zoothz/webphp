@@ -180,7 +180,7 @@ class admin extends CI_Controller {
 	{
 		$this->admin_model->deletePizzaById($id);
 		 
-		$this->load->view('thanhcong1');		 
+		$this->load->view('thanhcong2');		 
     }
     
 	public function addJquery()
@@ -353,7 +353,7 @@ class admin extends CI_Controller {
 	{
 		$this->admin_model->deleteDessertById($id);
 		 
-		$this->load->view('thanhcong1');		 
+		$this->load->view('thanhcong2');		 
     }
 
     /**** */
@@ -518,6 +518,6 @@ class admin extends CI_Controller {
 	{
 		$this->admin_model->deleteFoodById($id);
 		 
-		$this->load->view('thanhcong1');		 
+		$this->load->view('thanhcong2');		 
     }
 }

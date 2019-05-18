@@ -6,11 +6,15 @@ class MenuFood extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('menu_model');
     }
 	public function index()
 	{
-        $this->load->view('menufood');
-        
+        $dl = $this->menu_model->loadfood(); 
+		$mangdl =  array(
+			'dulieutin' => $dl,
+			);
+		$this->load->view('menufood',$mangdl);
     }
     
 }

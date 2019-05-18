@@ -63,7 +63,7 @@
 								</div>
 								<div class="col-sm-6">
 								
-								<a href="<?= base_url(); ?>admin/xoatin/<?php echo $value['id'] ?>" class="btn btn-outline-danger btn-block btn-lg"  >
+								<a href="<?= base_url(); ?>admin/xoapizza/<?php echo $value['id'] ?>" class="btn btn-outline-danger btn-block btn-lg"  >
 								Xóa 
 								</a>
 								</div>

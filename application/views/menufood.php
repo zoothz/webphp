@@ -78,84 +78,15 @@
 		<div class="container">
 			<h2 class="bigtitle">Food</h2>
 			<div class="w3-agileitsline daugach"></div>
+			<?php foreach ($dulieutin as $value): ?>
 				<div class="noidungkhoi food">		
 					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/food1.jpg" class="anhpizza" alt="">
-						<p class="textpizza">Camembert Truffles</p>
-						<p class="giapizza">310000 VND</p>
+						<img src="<?= $value['anhfood'] ?>" class="anhpizza" alt="">
+						<p class="textpizza"><?= $value['ten'] ?></p>
+						<p class="giapizza"><?= $value['gia'] ?> VND</p>
 					</div>
 				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/food2.jpg" class="anhpizza" alt="">
-						<p class="textpizza">Assorted House-made Cheese</p>
-						<p class="giapizza">1300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/food3.png" class="anhpizza" alt="">
-						<p class="textpizza">Petit Mozza Sushi</p>
-						<p class="giapizza">302000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/food4.png" class="anhpizza" alt="">
-						<p class="textpizza">Ricotta Cheese, Parma Ham Wrap</p>
-						<p class="giapizza">120000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/food5.png" class="anhpizza" alt="">
-						<p class="textpizza">Ratatouille</p>
-						<p class="giapizza">290000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">		
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/salad1.jpg" class="anhpizza" alt="">
-						<p class="textpizza">House-made Mozzarella with Dalat Tomato Caprese</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/salad2.jpg" class="anhpizza" alt="">
-						<p class="textpizza">Burrata with Parma Ham & Mixed Tropical Fruits</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/salad3.jpg" class="anhpizza" alt="">
-						<p class="textpizza">Burrata with Organic Rocket & Tomato Salad</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi food">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/salad4.jpg" class="anhpizza" alt="">
-						<p class="textpizza">Green Salad with House-made dressing</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-
-				<div class="noidungkhoi food">		
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/s1.jpg" class="anhpizza" alt="">
-						<p class="textpizza">Clam Chowder</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-			<div class="noidungkhoi food">		
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/s2.jpg" class="anhpizza" alt="">
-						<p class="textpizza">Meatball Tomato Soup</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
+				<?php endforeach ;?>
 			
 		</div> <!-- Hết container -->
 	</div> <!-- Hết infoPizza -->

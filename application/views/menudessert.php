@@ -78,55 +78,16 @@
 			<h2 class="bigtitle">Dessert</h2>
 			<div class="w3-agileitsline daugach">
 			</div>
+			<?php foreach ($dulieutin as $value): ?>
 				<div class="noidungkhoi Dessert">
 					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/Dessert1.png" class="anhpizza" alt="Matcha Brulee">
-						<p class="textpizza">Matcha Brulee</p>
-						<p class="giapizza">306000 VND</p>
+						<img src="<?= $value['anhdessert'] ?>" class="anhpizza" alt="Matcha Brulee">
+						<p class="textpizza"><?= $value['ten'] ?></p>
+						<p class="giapizza"><?= $value['gia'] ?> VND</p>
 					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi Dessert">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/Dessert2.png" class="anhpizza" alt="Creamy Pudding">
-						<p class="textpizza">Creamy Pudding</p>
-						<p class="giapizza">900000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi Dessert">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/Dessert3.png" class="anhpizza" alt="House-made Mascarpone Creamy Tiramisu">
-						<p class="textpizza">House-made Mascarpone Creamy Tiramisu</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi Dessert">		
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/Dessert4.png" class="anhpizza" alt="3 Kinds of Sorbet (Watermelon, Passion Fruit, Kiwi)">
-						<p class="textpizza">3 Kinds of Sorbet (Watermelon, Passion Fruit, Kiwi)</p>
-						<p class="giapizza">20000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi Dessert">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/Dessert5.jpg" class="anhpizza" alt="Non-baked Cheese Cake">
-						<p class="textpizza">Non-baked Cheese Cake</p>
-						<p class="giapizza">320000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi Dessert">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/Dessert6.jpg" class="anhpizza" alt="Double Cheese Cake">
-						<p class="textpizza">Double Cheese Cake</p>
-						<p class="giapizza">380000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi Dessert">
-					<div class="col-sm-4 chitietnd">
-						<img src="<?php base_url() ?>assets/images/Dessert7.png" class="anhpizza" alt="Fondant Chocolate Cake">
-						<p class="textpizza">Fondant Chocolate Cake</p>
-						<p class="giapizza">100000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
+				</div><!-- Hết noidungkhoi -->
+			<?php endforeach ;?>
+				<!-- Hết noidungkhoi -->
 	</div> <!-- Hết infoPizza -->
 </div>
 	<!-- Hết Menu Pizza -->

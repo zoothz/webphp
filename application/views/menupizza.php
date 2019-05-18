@@ -77,58 +77,17 @@
 		<div class="container">
 			<h2 class="bigtitle">Pizza</h2>
 			<div class="w3-agileitsline daugach"></div>
-			
+			<?php foreach ($dulieutin as $value): ?>
 				<!--   start-->
 				<div class="noidungkhoi">		
 					<div class="col-sm-4 chitietnd">
-						<img src="images/p1.png" class="anhpizza" alt="">
-						<p class="textpizza">Burrata Parma Ham</p>
-						<p class="giapizza">300000 VND</p>
+						<img src="<?= $value['anhpizza'] ?>" class="anhpizza" alt="">
+						<p class="textpizza"><?= $value['ten'] ?></p>
+						<p class="giapizza"><?= $value['gia'] ?> VND</p>
 					</div>
 				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p2.png" class="anhpizza" alt="">
-						<p class="textpizza">Burrata Parma Ham Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p3.png" class="anhpizza" alt="">
-						<p class="textpizza">Burrata Anchovy Tomato</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">		
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p4.png" class="anhpizza" alt="">
-						<p class="textpizza">Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p5.png" class="anhpizza" alt="">
-						<p class="textpizza">Parma Ham Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-				<div class="noidungkhoi">
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p6.png" class="anhpizza" alt="">
-						<p class="textpizza">Milano Salami & Chorizo Margherita</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
-			
-				<div class="noidungkhoi">		
-					<div class="col-sm-4 chitietnd">
-						<img src="images/p7.png" class="anhpizza" alt="">
-						<p class="textpizza">House-made Cheese</p>
-						<p class="giapizza">300000 VND</p>
-					</div>
-				</div> <!-- Hết noidungkhoi -->
+			<?php endforeach ;?>
+				
 			
 		</div> <!-- Hết container -->
 	</div> <!-- Hết infoPizza -->
