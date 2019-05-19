@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	 <meta http-equiv="refresh" content="1; url=<?= base_url() ?>tin/quanlytin">
+	 <meta http-equiv="refresh" content="1; url=<?= base_url() ?>admin/quanlytin">
 	<title>Thao tac thanh cong</title>
 
 	<script type="text/javascript" src="<?php echo base_url() ?>vendor/bootstrap.js"></script>

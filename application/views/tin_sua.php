@@ -8,9 +8,32 @@
  	<link rel="stylesheet" href="<?= base_url() ?>/1.css">
 </head>
 <body>
-
-
 	<div class="container">
+	<nav class="navbar navbar-light bg-faded">
+          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <a class="navbar-brand" href="<?= base_url()?>admin/menuquanly">From ADMIN</a>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucpizza">Menu Pizza <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucfood">Menu Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucdessert">Menu Dessert</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmuctin">Danh Muc Tin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/quanlytin">Quan Lý Tin</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 		<div class="row">
 			<div class="col-sm-10 push-sm-1">
 				<div class="jumbotron text-xs-center">
@@ -20,7 +43,7 @@
 							 
 						</div>
 					<div class="formthemmoi">
-						<form action="<?= base_url(); ?>tin/luutindasua" method="post" enctype="multipart/form-data">
+						<form action="<?= base_url(); ?>admin/luutindasua" method="post" enctype="multipart/form-data">
 							<?php foreach ($dulieusua as $value): ?>
 							
 
@@ -66,7 +89,7 @@
 								</div>
 								<div class="col-sm-6">
 								
-								<a href="<?= base_url(); ?>/tin/xoatin/<?php echo $value['id'] ?>" class="btn btn-outline-danger btn-block btn-lg"  >
+								<a href="<?= base_url(); ?>admin/xoatin/<?php echo $value['id'] ?>" class="btn btn-outline-danger btn-block btn-lg"  >
 								Xóa tin 
 								</a>
 								</div>

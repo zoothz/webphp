@@ -22,7 +22,7 @@ class Do_edit extends CI_Controller {
 	 	 
 		// truyền mảng này sang view editSlide_view
 
-		 $this->load->view('editSlide_view', $dl, FALSE);
+		 $this->load->view('editSlide', $dl, FALSE);
 
 	}
 

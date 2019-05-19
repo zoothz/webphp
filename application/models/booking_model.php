@@ -10,11 +10,11 @@ class booking_model extends CI_Model {
 		
 	}
 	
-	public function booking($tenkh,$emailkh,$sdt,$ngaydatban,$giodatban,$songuoi)
+	public function booking($tenkh,$email,$sdt,$ngaydatban,$giodatban,$songuoi)
 	{
 		$khachhang = array(
 			'tenkh' => $tenkh,
-			'emailkh' => $emailkh,
+			'email' => $email,
 			'sdt' => $sdt,
 			'ngaydatban' => $ngaydatban,
 			'giodatban' => $giodatban,

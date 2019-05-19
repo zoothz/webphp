@@ -19,7 +19,7 @@ class Home extends CI_Controller {
 	public function Booking()
 	{
 		$tenkh = $this->input->post('tenkh');
-		$emailkh = $this->input->post('emailkh');
+		$email = $this->input->post('email');
 		$sdt = $this->input->post('sdt');
 		$ngaydatban = $this->input->post('ngaydatban');
 		$giodatban = $this->input->post('giodatban');
@@ -27,15 +27,16 @@ class Home extends CI_Controller {
 
 
 		$this->load->model('booking_model');
-		if($this->booking_model->booking($tenkh,$emailkh,$sdt,$ngaydatban,$giodatban,$songuoi)){
-			echo "1";
+		if($this->booking_model->booking($tenkh,$email,$sdt,$ngaydatban,$giodatban,$songuoi)){
+			redirect('home/datbanthanhcong');
+
 		}
 		else {
 			echo "f";
 		}
 
 /*
-		if($this->booking_model->booking($tenkh,$emailkh,$sdt,$ngaydatban,$giodatban,$songuoi))
+		if($this->booking_model->booking($tenkh,$email,$sdt,$ngaydatban,$giodatban,$songuoi))
 		{
 			
 				// gui mail cho chủ nhà hàng thông báo có người vừa đặt bàn 
@@ -83,6 +84,10 @@ class Home extends CI_Controller {
 		else{
 			$this->load->view('thatbai');
 		}*/
+	}
+	public function datbanthanhcong()
+	{
+		$this->load->view('datbanthanhcong');
 	}
 	
 }

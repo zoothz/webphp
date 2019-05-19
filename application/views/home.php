@@ -504,7 +504,7 @@
 				<div class="message">
 					<div class="col-md-6 col-sm-6 grid_6 c1">
 						<input type="text" name="tenkh" class="text" placeholder="Name" required="" >
-						<input type="text" name="emailkh" class="text" placeholder="Email" required="" >
+						<input type="text" name="email" class="text" placeholder="Email" required="" >
 						<input type="text" name="sdt" class="number" placeholder="Phone" required="" >
 					</div> 
 					<div class="col-md-6 col-sm-6 grid_6 c1">

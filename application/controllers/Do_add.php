@@ -12,7 +12,7 @@ class Do_add extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('addData_view');
+		$this->load->view('addData_View');
 	}
 
 	public function addSlide()

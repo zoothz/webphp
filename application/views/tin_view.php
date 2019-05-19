@@ -13,7 +13,32 @@
 </head>
 <body>
  
-	<div class="container-fluid">
+	<div class="container">
+	<nav class="navbar navbar-light bg-faded">
+          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <a class="navbar-brand" href="<?= base_url()?>admin/menuquanly">From ADMIN</a>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucpizza">Menu Pizza <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucfood">Menu Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucdessert">Menu Dessert</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmuctin">Danh Muc Tin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/quanlytin">Quan Lý Tin</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 		<div class="row">
 			<div class="col-sm-6 themmoi">
 					<div class="jumbotron text-xs-center">
@@ -22,7 +47,7 @@
 							<hr class="m-y-md">							 
 						</div>
 					<div class="formthemmoi">
-						<form action="<?= base_url(); ?>tin/themmoitin" method="post" enctype="multipart/form-data">							
+						<form action="<?= base_url(); ?>admin/themmoitin" method="post" enctype="multipart/form-data">							
 							<fieldset class="form-group">
 								<label for="formGroupExampleInput">Tiêu đề tin</label>
 								<input name="tieude" type="text" class="form-control" id="formGroupExampleInput" placeholder="Tiêu đề ">
@@ -71,9 +96,9 @@
 									<img class="card-img-top img-fluid" src="<?= $value['anhtin'] ?>" alt="Card image cap">
 									<?php } ?>
 									<div class="card-block">
-										<h4 class="card-title"><?= $value['tieude'] ?></h4>
+										<p class="card-title"><?= $value['tieude'] ?></p>
 
-				                    <a href="<?= base_url(); ?>/tin/suatin/<?= $value['id'] ?>" class="btn btn-outline-success sua"><i class="fa fa-pencil"></i></a>
+				                    <a href="<?= base_url(); ?>admin/suatin/<?= $value['id'] ?>" class="btn btn-outline-success sua"><i class="fa fa-pencil"></i></a>
 									</div>
 								</div>							 
 							</div>

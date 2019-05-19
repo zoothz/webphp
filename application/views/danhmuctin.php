@@ -13,35 +13,61 @@
 </head>
 <body>
     <div class="container">
+	<nav class="navbar navbar-light bg-faded">
+          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <a class="navbar-brand" href="<?= base_url()?>admin/menuquanly">From ADMIN</a>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucpizza">Menu Pizza <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucfood">Menu Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucdessert">Menu Dessert</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmuctin">Danh Muc Tin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/quanlytin">Quan Lý Tin</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div class="row">
-            <div class="col-sm-6">
-                <div class="jumbotron jumbotron-fluid text-xs-center">
+				<div class="col-sm-6">
+		        <div class="jumbotron jumbotron-fluid text-xs-center">
 					<div class="container">
-					    <h1 class="display-5">Thêm danh mục tin </h1>
-					    <p class="lead">Form này cho phép thêm danh mục tin và cơ sở dữ liệu.</p>
+						<h1 class="display-5">Thêm danh mục tin </h1>
+						<p class="lead"></p>
+					</div>
 				</div>
-                <form action="<?= base_url(); ?>/tin/themdanhmuc" method="post">
-                    <fieldset class="form-group">
-                        <label for="formGroupExampleInput">Tên danh mục</label> 
-                        <input name="tendanhmuc" type="text" class="form-control" id="tendanhmuc" placeholder="Tên danh mục">
-                    </fieldset>
-                    <fieldset class="form-group">
- 						<input type="submit" class="form-control" id="nuthemdanhmuc" value="Thêm danh mục">
+				<!-- <form action="<?php //echo base_url(); ?>/tin/themdanhmuc" method="post"> -->
+					<fieldset class="form-group">
+						<label for="formGroupExampleInput">Tên danh mục</label>
+						<input name="tendanhmuc" type="text" class="form-control" id="tendanhmuc" placeholder="Tên danh mục">
 					</fieldset>
-                </form>
-                </div>
-            </div>
+					<fieldset class="form-group">
+ 						<input type="button" class="form-control" id="nuthemdanhmuc" value="Thêm danh mục">
+					</fieldset>
+				<!-- </form> -->
+			</div> <!-- end cot trai -->
             <div class="col-sm-6 cacdanhmuc">
                 <div class="jumbotron jumbotron-fluid text-xs-center">
 					<div class="container">
-						<h1 class="display-5">Danh sách danh mục tin </h1>
-							<p class="lead">Các danh mục tin đã thêm .</p>
+						<h1 class="display-5">Danh sách danh mục tin </h1><br>
+						<br>
+						<br>
                     </div>
                     <?php foreach ($dulieu as $motketqua): ?>
 						<div class="card card-inverse card-primary mb-3 text-center">
 						  <div class="card-block">
 							<div class="thaotac text-xs-right">
-								<a data-href="<?php echo base_url(); ?>/tin/suadanhmuc/<?= $motketqua['id'] ?>" class="nutedit btn btn-danger"> <i class="fa fa-pencil"></i></a>
+								<a data-href="<?php echo base_url(); ?>admin/suadanhmuc/<?= $motketqua['id'] ?>" class="nutedit btn btn-danger"> <i class="fa fa-pencil"></i></a>
  						  		<a data-href="<?= $motketqua['id'] ?>" class="nutxoa btn btn-warning"> <i class="fa fa-remove"></i></a>
 							</div>
 							<div class="jquery_button text-xs-right hidden-xs-up">
@@ -94,7 +120,7 @@
  			 //cho hien thi nut
  			// console.log(noidung);
  			$.ajax({
- 				url:duongdan+'/tin/updatedanhmuc',
+ 				url:duongdan+'/admin/updatedanhmuc',
  				type: 'POST',
  				dataType: 'json',
  				data: {
@@ -114,14 +140,14 @@
  			event.preventDefault();
  			/* Act on the event */
  		});
- 		var duongdan = '<?php echo base_url() ?>' ; 
+ 		var duongdan = '<?php echo base_url() ;?>' ; 
  		// bat su kien click nut 
  		$('#nuthemdanhmuc').click(function(event) {
  			/* Act on the event */
  			// var tendanhmuc = $('#tendanhmuc').val();
  			// console.log(tendanhmuc);
  			$.ajax({
- 				url: duongdan+'/tin/addJquery',  // gửi đi controller xử lý 
+ 				url: duongdan+'admin/addJquery',  // gửi đi controller xử lý 
  				type: 'POST',
  				dataType: 'json',
  				data: {tendanhmuc: $('#tendanhmuc').val()} 
@@ -160,7 +186,7 @@
  			idtin = $(this).data('href');
  			doituongcanxoa = $(this).parent().parent().parent();
  			$.ajax({
- 			 		url: duongdan + '/tin/xoadanhmuc/'+idtin,
+ 			 		url: duongdan + '/admin/xoadanhmuc/'+idtin,
  			 		type: 'POST',
  			 		dataType: 'json'
  			 	})

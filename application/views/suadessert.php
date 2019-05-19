@@ -14,16 +14,22 @@
             &#9776;
           </button>
           <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-            <a class="navbar-brand" href="<?= base_url()?>admin/menuquanly">Backend slide</a>
+            <a class="navbar-brand" href="<?= base_url()?>admin/menuquanly">From ADMIN</a>
             <ul class="nav navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="<?= base_url() ?>admin/danhmucpizza">Menu Pizza <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?= base_url() ?>admin/danhmucfood">menu Food</a>
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmucfood">Menu Food</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url() ?>admin/danhmucdessert">Menu Dessert</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/danhmuctin">Danh Muc Tin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?= base_url() ?>admin/quanlytin">Quan Lý Tin</a>
               </li>
             </ul>
           </div>
@@ -40,7 +46,7 @@
 							 
 						</div>
 					<div class="formthemmoi">
-						<form action="<?= base_url(); ?>menu/updatedessert" method="post" enctype="multipart/form-data">
+						<form action="<?= base_url(); ?>admin/updatedessert" method="post" enctype="multipart/form-data">
                         <?php foreach ($dulieusua as $value): ?>
 							<input type="hidden" name="id" value="<?php echo $value['id'] ?>">
 							<fieldset class="form-group">
@@ -65,7 +71,7 @@
 								</div>
 								<div class="col-sm-6">
 								
-								<a href="<?= base_url(); ?>menu/xoadessert/<?php echo $value['id'] ?>" class="btn btn-outline-danger btn-block btn-lg"  >
+								<a href="<?= base_url(); ?>admin/xoadessert/<?php echo $value['id'] ?>" class="btn btn-outline-danger btn-block btn-lg"  >
 								Xóa 
 								</a>
 								</div>
